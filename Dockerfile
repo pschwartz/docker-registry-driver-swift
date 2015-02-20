@@ -5,4 +5,5 @@ MAINTAINER Matthew Fisher <me@bacongobbler.com>
 RUN apt-get update && apt-get install -yq python-lxml
 
 COPY . /src
+RUN pip install MySQL-python
 RUN pip install /src
